@@ -1,6 +1,6 @@
 
 const int buttonPin = 2;     
-const int ledPin =  5;    
+const int ledPin =  13;    
 
 
 int buttonState = 0;  
@@ -14,7 +14,7 @@ void loop() {
   buttonState = digitalRead(buttonPin);
 
   
-  if (buttonState == HIGH) {
+  if (buttonState == LOW) {
    digitalWrite(ledPin, HIGH);
   } 
   else {
