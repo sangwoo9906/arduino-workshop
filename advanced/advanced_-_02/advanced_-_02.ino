@@ -8,7 +8,6 @@ void setup() {
 
 void loop() {
   R = analogRead(A0);
-  R = map(R, 0, 1023,0, 255);
+  R = map(R, 0, 1023,0, 180);
   analogWrite(3,R);
-  
 }
